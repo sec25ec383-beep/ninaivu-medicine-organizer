@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+:root { font-family: Arial, Helvetica, sans-serif; color: #202124; background: #f5f3ef; }
+body { margin: 0; padding: 18px; }
+.app { max-width: 760px; margin: 0 auto; }
+header { background: #173f35; color: white; padding: 26px; border-radius: 18px; }
+.eyebrow { font-size: .78rem; letter-spacing: .12em; font-weight: 700; }
+h1 { font-size: clamp(2.3rem, 8vw, 3.5rem); margin: 8px 0; }
+.subtitle { font-size: 1.1rem; line-height: 1.5; margin-bottom: 0; }
+.notice { background: #fff1d8; border-left: 5px solid #b46b12; margin: 16px 0; padding: 14px 16px; line-height: 1.5; border-radius: 8px; }
+.intro { margin: 24px 2px 14px; line-height: 1.5; }
+h2 { font-size: 1.35rem; }
+.schedule { display: grid; gap: 14px; }
+.time-card { display: flex; gap: 18px; align-items: center; background: white; padding: 20px; border: 2px solid #dedbd5; border-radius: 16px; }
+.symbol { flex: 0 0 76px; height: 76px; border-radius: 16px; display: grid; place-items: center; font-size: 2.6rem; font-weight: 700; color: #173f35; background: #e4efe9; }
+.afternoon .symbol { background: #fff0cf; }
+.night .symbol { background: #e9e5fb; }
+.card-copy h3 { font-size: 1.35rem; margin: 0 0 7px; }
+.card-copy p { margin: 0 0 12px; line-height: 1.4; }
+.check-row { display: flex; gap: 10px; align-items: center; font-size: 1rem; font-weight: 700; }
+input[type="checkbox"] { width: 24px; height: 24px; accent-color: #17664e; }
+.progress { margin-top: 20px; padding: 20px; border-radius: 16px; background: white; border: 2px solid #dedbd5; }
+.progress-track { height: 14px; background: #e7e5e0; border-radius: 20px; overflow: hidden; }
+#progress-fill { height: 100%; width: 0; background: #17664e; transition: width .2s ease; }
+button { margin-top: 16px; padding: 12px 18px; border: 0; border-radius: 10px; background: #173f35; color: white; font-size: 1rem; font-weight: 700; cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 3px solid #c16b2b; outline-offset: 3px; }
+footer { line-height: 1.5; color: #454545; padding: 14px 2px; font-size: .95rem; }
+@media (max-width: 440px) {
+  body { padding: 10px; }
+  .time-card { padding: 14px; gap: 12px; }
+  .symbol { flex-basis: 58px; height: 58px; font-size: 2rem; }
+}

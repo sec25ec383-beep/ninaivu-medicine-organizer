@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ninaivu — Medicine Routine Organizer Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">ACCESSIBLE HEALTHCARE CONCEPT</p>
+      <h1>Ninaivu</h1>
+      <p class="subtitle">A simple medicine-routine organizer for older adults</p>
+    </header>
+
+    <section class="notice" role="note">
+      <strong>Prototype demo only.</strong> This tool does not prescribe medicines or verify doses.
+      Follow the schedule provided by a qualified healthcare professional.
+    </section>
+
+    <section class="intro">
+      <h2>Today's routine</h2>
+      <p>Use the large symbols and labels to identify a time-of-day section.</p>
+    </section>
+
+    <section class="schedule" aria-label="Medicine schedule sections">
+      <article class="time-card morning">
+        <div class="symbol" aria-hidden="true">☀</div>
+        <div class="card-copy">
+          <h3>Morning</h3>
+          <p>Check your prescribed schedule</p>
+          <label class="check-row">
+            <input type="checkbox" data-slot="morning">
+            <span>Marked as checked</span>
+          </label>
+        </div>
+      </article>
+
+      <article class="time-card afternoon">
+        <div class="symbol" aria-hidden="true">◉</div>
+        <div class="card-copy">
+          <h3>Afternoon</h3>
+          <p>Check your prescribed schedule</p>
+          <label class="check-row">
+            <input type="checkbox" data-slot="afternoon">
+            <span>Marked as checked</span>
+          </label>
+        </div>
+      </article>
+
+      <article class="time-card night">
+        <div class="symbol" aria-hidden="true">☾</div>
+        <div class="card-copy">
+          <h3>Night</h3>
+          <p>Check your prescribed schedule</p>
+          <label class="check-row">
+            <input type="checkbox" data-slot="night">
+            <span>Marked as checked</span>
+          </label>
+        </div>
+      </article>
+    </section>
+
+    <section class="progress" aria-live="polite">
+      <h2>Routine checklist</h2>
+      <p id="progress-text">0 of 3 sections checked</p>
+      <div class="progress-track"><div id="progress-fill"></div></div>
+      <button id="reset-button" type="button">Reset checklist</button>
+    </section>
+
+    <footer>
+      <p><strong>Design principle:</strong> large labels, simple symbols and caregiver support.</p>
+      <p>Concept demonstration only. No personal or medical data is stored.</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
